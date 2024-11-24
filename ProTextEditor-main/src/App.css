@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* body css */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(https://images.pexels.com/photos/132200/pexels-photo-132200.jpeg?cs=srgb&dl=pexels-fwstudio-33348-132200.jpg&fm=jpg);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: #ffffff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #000000;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+textarea {
+  width: 350px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  background-color: #004080;
+}
+
+.continer {
+  margin-top: 30px;
+}
+
+.continer h2 {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.continer p {
+  color: #833400;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.mainForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons{
+  gap: 10;
+  margin-top: 20px;
+}
+
+.buttons button{
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: rgb(167, 167, 167);
+  margin: 5px;
+  box-shadow: 5px 5px 15px rgb(0, 0, 0);
+  transition: 0.3s;
+
+}
+.buttons button:hover{
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: rgb(124, 124, 124);
+  box-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
