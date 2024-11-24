@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather by Error</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Weather Here</h1>
+    <p>Enter a city or country to get the current weather.</p>
+    <input type="text" id="location" placeholder="Enter city or country">
+    <button onclick="fetchWeather()">Get Weather</button>
+    
+    <div id="weather-info">
+        <div id="weather-main">
+            <h2>Weather Details</h2>
+            <p><strong>Location:</strong> <span id="location-name"></span></p>
+            <p><strong>Temperature:</strong> <span id="temperature"></span>°C</p>
+            <p><strong>Condition:</strong> <span id="condition"></span></p>
+            <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
