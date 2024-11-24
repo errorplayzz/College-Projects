@@ -1,0 +1,52 @@
+body{
+    background-image: url(./pexels-christian-heitz-285904-842711.jpg);
+    background-size: cover;
+}
+button{
+    height: 100px;
+    width: 200px;
+    font-size: 20px;
+    box-shadow: 15px 15px 15px black;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.onClick1:hover{
+    background-color: green;
+    color: white;
+    box-shadow: 10px 10px 15px black;
+}
+.onClick2:hover{
+    background-color: yellow;
+    color: white;
+    box-shadow: 10px 10px 15px black;
+}
+.onClick3:hover{
+    background-color: red;
+    color: white;
+    box-shadow: 10px 10px 15px black;
+}
+div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+#counter{
+    color: white;
+    font-size: 30px;
+    }
+#counter p{
+    background-color: rgba(0, 0, 0, 0.575);
+    padding: 10px;
+    box-shadow: 10px 10px 15px black;
+    border-radius: 10px;
+    font-weight: bolder;
+}    
+.speed select{
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.speed{
+    display: flex;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div id="counter"><p>Counter: 0</p></div>
+    <div class="speed">
+        <!-- <label for="speed"><p>Select Speed:</p></label> -->
+        <select id="speed">
+            <option value="none">Select Speed</option>
+            <option value="1000">1 Second</option>
+            <option value="500">0.5 Seconds</option>
+            <option value="200">0.2 Seconds</option>
+        </select>
+    </div>
+    <div>
+        <button class="onClick1" onclick="startCounter()">Start</button>
+        <button class="onClick2" onclick="pauseCounter()">Pause</button>
+        <button class="onClick3" onclick="resetCounter()">Reset</button>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
