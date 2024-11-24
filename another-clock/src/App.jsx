@@ -2,25 +2,23 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 
 export default function TimeManager() {
-  const [stopwatch, setStopwatch] = useState(0); // Stopwatch time in milliseconds
+  const [stopwatch, setStopwatch] = useState(0);
   const [isStopwatchRunning, setIsStopwatchRunning] = useState(false);
 
-  const [timer, setTimer] = useState(0); // Timer duration in seconds
+  const [timer, setTimer] = useState(0);
   const [isTimerRunning, setIsTimerRunning] = useState(false);
 
-  // Stopwatch functionality
   useEffect(() => {
     let stopwatchInterval;
     if (isStopwatchRunning) {
       const start = Date.now() - stopwatch;
       stopwatchInterval = setInterval(() => {
-        setStopwatch(Date.now() - start); // Update elapsed time
-      }, 10); // Update every 10ms for smooth operation
+        setStopwatch(Date.now() - start);
+      }, 10);
     }
     return () => clearInterval(stopwatchInterval);
   }, [isStopwatchRunning, stopwatch]);
 
-  // Timer functionality
   useEffect(() => {
     let timerInterval;
     if (isTimerRunning && timer > 0) {
@@ -34,7 +32,6 @@ export default function TimeManager() {
     return () => clearInterval(timerInterval);
   }, [isTimerRunning, timer]);
 
-  // Format time (HH:MM:SS:MS)
   const formatStopwatchTime = (time) => {
     const milliseconds = Math.floor((time % 1000) / 10);
     const seconds = Math.floor((time / 1000) % 60);
@@ -46,7 +43,6 @@ export default function TimeManager() {
     )}:${String(seconds).padStart(2, "0")}.${String(milliseconds).padStart(2, "0")}`;
   };
 
-  // Format time for the timer (HH:MM:SS)
   const formatTimerTime = (time) => {
     const hours = Math.floor(time / 3600);
     const minutes = Math.floor((time % 3600) / 60);
@@ -62,19 +58,18 @@ export default function TimeManager() {
       <div style={{ padding: "20px", fontFamily: "Arial" }}>
       <h1>Time Manager Here</h1>
 
-      {/* Stopwatch */}
       <div>
         <h2>Stopwatch</h2>
         <p>{formatStopwatchTime(stopwatch)}</p>
         <button
           onClick={() => setIsStopwatchRunning(true)}
-          disabled={isStopwatchRunning} // Disable when running
+          disabled={isStopwatchRunning}
         >
           Start
         </button>
         <button
           onClick={() => setIsStopwatchRunning(false)}
-          disabled={!isStopwatchRunning} // Disable when stopped
+          disabled={!isStopwatchRunning}
         >
           Stop
         </button>
@@ -88,7 +83,6 @@ export default function TimeManager() {
         </button>
       </div>
 
-      {/* Timer */}
       <div>
         <h2>Timer</h2>
         <input
