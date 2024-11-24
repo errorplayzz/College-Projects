@@ -1,4 +1,4 @@
-const API_KEY = "ac4703d8a7f14989b79164444242011";
+const API_KEY = "Enter your api";
 
 async function fetchWeather() {
     const location = document.getElementById("location").value;
