@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dynamic Quiz App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <div class="quiz-header">
+      <div class="quiz-title-bar">
+        <h2>Choose Your Quiz</h2>
+        <span class="timer" id="timer"></span>
+      </div>
+      <select id="quiz-subject">
+        <option value="python">Python Programming</option>
+        <option value="cpp">C++</option>
+        <option value="javascript">JavaScript</option>
+        <option value="oops">OOPs Concepts</option>
+        <option value="rust">Rust Programming</option>
+      </select>
+      <select id="quiz-count">
+        <option value="5">5 Questions</option>
+        <option value="10">10 Questions</option>
+        <option value="15">15 Questions</option>
+        <option value="20">20 Questions</option>
+      </select>
+      <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+    <div id="quiz-area"></div>
+    <div id="result-screen" style="display:none;"></div>
+    <div class="loading" id="loading-spinner"></div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
